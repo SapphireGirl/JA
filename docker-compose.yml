@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  basket.api:
+    image: ${DOCKER_REGISTRY}basketapi
+    build:
+      context: .
+      dockerfile: src\Services\Basket\Basket.API\Dockerfile
+
+  ja.util:
+    image: ${DOCKER_REGISTRY-}jautil
+    build:
+      context: .\JA.Util
+      dockerfile: Dockerfile
+
+
+  ja.data:
+    image: ${DOCKER_REGISTRY-}jadata
+    build:
+      context: .\JA.Data
+      dockerfile: Dockerfile
+
+
+  #ja.models:
+  #  image: ${DOCKER_REGISTRY-}jadatamodels
+  #  build:
+  #    context: .\JA.Models
+  #    dockerfile: Dockerfile
+
