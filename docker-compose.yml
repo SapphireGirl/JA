@@ -27,3 +27,10 @@ services:
   #    context: .\JA.Models
   #    dockerfile: Dockerfile
 
+
+  ja.fe:
+    image: ${DOCKER_REGISTRY-}jafe
+    build:
+      context: .\JA.FE
+      dockerfile: Dockerfile
+

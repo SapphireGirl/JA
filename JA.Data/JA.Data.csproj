@@ -63,11 +63,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\BaseContext.cs" />
     <Compile Include="Context\BlogContext.cs" />
     <Compile Include="Context\IWorkoutContext.cs" />
+    <Compile Include="Context\SeedHelper.cs" />
     <Compile Include="Context\WorkoutContext.cs" />
-    <Compile Include="GoGirlDb.cs" />
     <Compile Include="Initialize.cs" />
+    <Compile Include="Mappings\FruitConfig.cs" />
+    <Compile Include="Mappings\GoGirlCustomerMappings.cs" />
+    <Compile Include="Mappings\RecipeConfig.cs" />
+    <Compile Include="Mappings\VegetableConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seeds\SeedInitialDatabase.cs" />
   </ItemGroup>
@@ -81,24 +86,25 @@
     <Folder Include="Databases\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dbo - Copy %282%29.GoGirlCustomer.sql" />
-    <Content Include="dbo.Admin.sql" />
-    <Content Include="dbo.Foodlog.sql" />
-    <Content Include="dbo.GoGirlCustomer.sql" />
-    <Content Include="dbo.Workoutlog.sql" />
-    <Content Include="GoGirlDb.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="GoGirlDb.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JA.Logging\JA.Logging.csproj">
+      <Project>{2e05d1db-14cd-49a5-9a71-b7dcd3d0eed6}</Project>
+      <Name>JA.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JA.Models\JA.Models.csproj">
+      <Project>{9a7eaf9d-be8f-4440-b6d7-30ea28926426}</Project>
+      <Name>JA.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JA.Util\JA.Util.csproj">
+      <Project>{4d2eb5c8-6cff-43e4-8b9f-c4b9bce5691a}</Project>
+      <Name>JA.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -70,7 +70,6 @@
     <None Include="SQLDBS\GoGirlDb.mdf" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Scripts\dbo - Copy %282).GoGirlCustomer.sql" />
     <Build Include="Scripts\dbo.Admin.sql" />
     <Build Include="Scripts\dbo.Foodlog.sql" />
     <Build Include="Scripts\dbo.GoGirlCustomer.sql" />

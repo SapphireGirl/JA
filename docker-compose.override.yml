@@ -18,10 +18,14 @@ services:
     ports:
       - "80"
  
+  ja.fe:
+    ports:
+      - "80"
 networks:
   default:
     external:
       name: nat
+
 
 
 

@@ -1363,75 +1363,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.Util", "JA.Util\JA.Util.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.Util.Tests", "JA.Util.Tests\JA.Util.Tests.csproj", "{73C8AD69-0178-40DA-9937-0A4FE6E28761}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BU", "BU", "{6AEFA968-7D42-43F0-B335-8CF7F47E5F4A}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\App.config = JA.Data\App.config
-		JA.Data\Connections.config = JA.Data\Connections.config
-		src\BuildingBlocks\EventBus\JA.EventBus\log4net.config = src\BuildingBlocks\EventBus\JA.EventBus\log4net.config
-		src\BuildingBlocks\EventBus\JA.EventBus\Program.cs = src\BuildingBlocks\EventBus\JA.EventBus\Program.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contexts", "Contexts", "{404D760F-04B6-42C1-BCDA-5199F6310B86}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\Contexts\BaseContext.cs = JA.Data\Contexts\BaseContext.cs
-		JA.Data\Contexts\FoodContext.cs = JA.Data\Contexts\FoodContext.cs
-		JA.Data\Contexts\GoGirlCustomerContext.cs = JA.Data\Contexts\GoGirlCustomerContext.cs
-		JA.Data\Contexts\IFoodContext.cs = JA.Data\Contexts\IFoodContext.cs
-		JA.Data\Contexts\IGoGirlCustomerContext.cs = JA.Data\Contexts\IGoGirlCustomerContext.cs
-		JA.Data\Contexts\IWorkoutContext.cs = JA.Data\Contexts\IWorkoutContext.cs
-		JA.Data\Contexts\WorkoutContext.cs = JA.Data\Contexts\WorkoutContext.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seeds", "Seeds", "{2E1FA2A1-04E8-4601-8641-2A06F17C493F}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\Contexts\Seeds\InitializeContexts.cs = JA.Data\Contexts\Seeds\InitializeContexts.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{7F94EAF5-C7BE-4165-8A53-F8B2EAB81EB4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{342AC2D2-795A-4E87-803C-AA5BFEBA8E4B}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\DB\GoGirlDb.cs = JA.Data\DB\GoGirlDb.cs
-		JA.Data\DB\Databases\GoGirlDb.ldf = JA.Data\DB\Databases\GoGirlDb.ldf
-		JA.Data\DB\Databases\GoGirlDb.mdf = JA.Data\DB\Databases\GoGirlDb.mdf
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interceptors", "Interceptors", "{A4C42322-C357-4D49-BBFE-3A4E9AD97E7F}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\Interceptors\EFCommandInterceptors.cs = JA.Data\Interceptors\EFCommandInterceptors.cs
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{FEA2E949-ECC3-42A7-AF32-B140D20F307E}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\DB\Scripts\DatabaseReads.sql = JA.Data\DB\Scripts\DatabaseReads.sql
-		JA.Data\DB\Scripts\dbo.Admin.sql = JA.Data\DB\Scripts\dbo.Admin.sql
-		JA.Data\DB\Scripts\dbo.Blog.sql = JA.Data\DB\Scripts\dbo.Blog.sql
-		JA.Data\DB\Scripts\dbo.Foodlog.sql = JA.Data\DB\Scripts\dbo.Foodlog.sql
-		JA.Data\DB\Scripts\dbo.GoGirlCustomer.sql = JA.Data\DB\Scripts\dbo.GoGirlCustomer.sql
-		JA.Data\DB\Scripts\dbo.Recipe.sql = JA.Data\DB\Scripts\dbo.Recipe.sql
-		JA.Data\DB\Scripts\dbo.Workoutlog.sql = JA.Data\DB\Scripts\dbo.Workoutlog.sql
-		JA.Data\DB\Scripts\InitializeDB.sql = JA.Data\DB\Scripts\InitializeDB.sql
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{C2415777-5C51-42DE-A9B7-69D23B3C760E}"
-	ProjectSection(SolutionItems) = preProject
-		JA.Data\Models\Admin.cs = JA.Data\Models\Admin.cs
-		JA.Data\Models\BaseEntity.cs = JA.Data\Models\BaseEntity.cs
-		JA.Data\Models\FoodEntity.cs = JA.Data\Models\FoodEntity.cs
-		JA.Data\Models\Foodlog.cs = JA.Data\Models\Foodlog.cs
-		JA.Data\Models\GoGirlCustomer.cs = JA.Data\Models\GoGirlCustomer.cs
-		JA.Data\Models\GoGirlEntity.cs = JA.Data\Models\GoGirlEntity.cs
-		JA.Data\Models\IFood.cs = JA.Data\Models\IFood.cs
-		JA.Data\Models\IFoodLog.cs = JA.Data\Models\IFoodLog.cs
-		JA.Data\Models\IWorkout.cs = JA.Data\Models\IWorkout.cs
-		JA.Data\Models\IWorkoutLog.cs = JA.Data\Models\IWorkoutLog.cs
-		JA.Data\Models\User.cs = JA.Data\Models\User.cs
-		JA.Data\Models\WOPartner.cs = JA.Data\Models\WOPartner.cs
-		JA.Data\Models\Workout.cs = JA.Data\Models\Workout.cs
-		JA.Data\Models\WorkoutEntity.cs = JA.Data\Models\WorkoutEntity.cs
-		JA.Data\Models\WorkoutLog.cs = JA.Data\Models\WorkoutLog.cs
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkTests", "EntityFrameworkTests", "{9381AA81-6EE2-4DF9-AFAA-28168E5A604E}"
 	ProjectSection(SolutionItems) = preProject
 		FE6CodeConfig.cs = FE6CodeConfig.cs
@@ -1447,6 +1378,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.Data", "JA.Data\JA.Data.csproj", "{E2BED2F7-7753-452D-A9E4-D75D5FEEFA97}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JA.Database", "JA.Database\JA.Database.sqlproj", "{F1D1ECE4-F7DB-4484-8105-BE8ADDC8B6B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{E32E4FD6-34B5-43B3-9E6F-62A1584277BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.Models", "JA.Models\JA.Models.csproj", "{9A7EAF9D-BE8F-4440-B6D7-30EA28926426}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{6198C83A-3A78-4072-91B3-987FBF0CB272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.FE", "JA.FE\JA.FE.csproj", "{948859DF-8216-487C-8465-5C1E28CE3D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JA.FE.Tests", "JA.FE.Tests\JA.FE.Tests.csproj", "{96A4231E-9225-40CF-A0D5-F724FDAB1DD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1496,6 +1437,18 @@ Global
 		{F1D1ECE4-F7DB-4484-8105-BE8ADDC8B6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1D1ECE4-F7DB-4484-8105-BE8ADDC8B6B1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1D1ECE4-F7DB-4484-8105-BE8ADDC8B6B1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9A7EAF9D-BE8F-4440-B6D7-30EA28926426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7EAF9D-BE8F-4440-B6D7-30EA28926426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7EAF9D-BE8F-4440-B6D7-30EA28926426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7EAF9D-BE8F-4440-B6D7-30EA28926426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948859DF-8216-487C-8465-5C1E28CE3D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948859DF-8216-487C-8465-5C1E28CE3D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948859DF-8216-487C-8465-5C1E28CE3D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948859DF-8216-487C-8465-5C1E28CE3D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A4231E-9225-40CF-A0D5-F724FDAB1DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A4231E-9225-40CF-A0D5-F724FDAB1DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A4231E-9225-40CF-A0D5-F724FDAB1DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A4231E-9225-40CF-A0D5-F724FDAB1DD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1545,18 +1498,15 @@ Global
 		{B42C4314-294D-4E32-A1B3-E6EB697DAAC6} = {270D4EE3-1BCE-4B30-8CEE-BDA6C7DAFCE6}
 		{37202733-97A6-4F38-AF1F-D819AFACED5B} = {270D4EE3-1BCE-4B30-8CEE-BDA6C7DAFCE6}
 		{2E05D1DB-14CD-49A5-9A71-B7DCD3D0EED6} = {2CF90943-636A-48BB-9128-85B78C69F414}
-		{6AEFA968-7D42-43F0-B335-8CF7F47E5F4A} = {270D4EE3-1BCE-4B30-8CEE-BDA6C7DAFCE6}
-		{404D760F-04B6-42C1-BCDA-5199F6310B86} = {6AEFA968-7D42-43F0-B335-8CF7F47E5F4A}
-		{2E1FA2A1-04E8-4601-8641-2A06F17C493F} = {404D760F-04B6-42C1-BCDA-5199F6310B86}
-		{7F94EAF5-C7BE-4165-8A53-F8B2EAB81EB4} = {6AEFA968-7D42-43F0-B335-8CF7F47E5F4A}
-		{342AC2D2-795A-4E87-803C-AA5BFEBA8E4B} = {7F94EAF5-C7BE-4165-8A53-F8B2EAB81EB4}
-		{A4C42322-C357-4D49-BBFE-3A4E9AD97E7F} = {6AEFA968-7D42-43F0-B335-8CF7F47E5F4A}
-		{FEA2E949-ECC3-42A7-AF32-B140D20F307E} = {7F94EAF5-C7BE-4165-8A53-F8B2EAB81EB4}
-		{C2415777-5C51-42DE-A9B7-69D23B3C760E} = {6AEFA968-7D42-43F0-B335-8CF7F47E5F4A}
 		{9381AA81-6EE2-4DF9-AFAA-28168E5A604E} = {2CC07157-AD7D-47F3-A148-40DC2B5F31D3}
 		{8C0D7530-503E-4344-9F3C-C14E1023CF46} = {C3E264B9-EB80-4202-B9AF-FBCE27108B22}
 		{E2BED2F7-7753-452D-A9E4-D75D5FEEFA97} = {B42C4314-294D-4E32-A1B3-E6EB697DAAC6}
 		{F1D1ECE4-F7DB-4484-8105-BE8ADDC8B6B1} = {B42C4314-294D-4E32-A1B3-E6EB697DAAC6}
+		{E32E4FD6-34B5-43B3-9E6F-62A1584277BA} = {270D4EE3-1BCE-4B30-8CEE-BDA6C7DAFCE6}
+		{9A7EAF9D-BE8F-4440-B6D7-30EA28926426} = {E32E4FD6-34B5-43B3-9E6F-62A1584277BA}
+		{6198C83A-3A78-4072-91B3-987FBF0CB272} = {270D4EE3-1BCE-4B30-8CEE-BDA6C7DAFCE6}
+		{948859DF-8216-487C-8465-5C1E28CE3D1F} = {6198C83A-3A78-4072-91B3-987FBF0CB272}
+		{96A4231E-9225-40CF-A0D5-F724FDAB1DD2} = {6198C83A-3A78-4072-91B3-987FBF0CB272}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09B73331-7D44-40D8-BE0A-A301D5DBA70D}
