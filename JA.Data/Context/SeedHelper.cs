@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JA.Data.Context;
-using JA.Models.BlogModels.BI;
 using JA.Models.BlogModels.Food;
+using JA.Models.CustomerModels;
 
 namespace NinjaDomain.DataModel
 {
@@ -18,13 +18,13 @@ namespace NinjaDomain.DataModel
            // Database.SetInitializer(new DropCreateDatabaseAlways<BlogContext>());
             using (var context = new BlogContext())
             {
-                if (context.GoGirls.Any())
+                if (context.Customers.Any())
                 {
                     return;
                 }
-                var vtClan = context.GoGirls.Add(new GoGirlCustomer { FirstName = "Vermont Clan" });
-                var turtleClan = context.GoGirls.Add(new GoGirlCustomer { FirstName = "Turtles" });
-                var amClan = context.GoGirls.Add(new GoGirlCustomer { FirstName = "American Ninja Warriors" });
+                var vtClan = context.Customers.Add(new GoGirlCustomer { FirstName = "Vermont Clan" });
+                var turtleClan = context.Customers.Add(new GoGirlCustomer { FirstName = "Turtles" });
+                var amClan = context.Customers.Add(new GoGirlCustomer { FirstName = "American Ninja Warriors" });
 
                 var j = new GoGirlCustomer
                 {

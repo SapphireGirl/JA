@@ -7,13 +7,6 @@ services:
       context: .
       dockerfile: src\Services\Basket\Basket.API\Dockerfile
 
-  ja.util:
-    image: ${DOCKER_REGISTRY-}jautil
-    build:
-      context: .\JA.Util
-      dockerfile: Dockerfile
-
-
   ja.data:
     image: ${DOCKER_REGISTRY-}jadata
     build:
@@ -24,7 +17,7 @@ services:
   #ja.models:
   #  image: ${DOCKER_REGISTRY-}jadatamodels
   #  build:
-  #    context: .\JA.Models
+  #    context: .\JA.Modelsr
   #    dockerfile: Dockerfile
 
 

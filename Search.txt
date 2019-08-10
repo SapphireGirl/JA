@@ -1,0 +1,4 @@
+Use Solr search
+By Apache
+https://lucene.apache.org/solr/guide/8_1/solr-tutorial.html
+To run on Windows, must install the JRE

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JA.Data.Context
 {
-    public class WorkoutContext : DbContext
+    public class WorkoutContext : BaseContext<WorkoutContext>
     {
         public WorkoutContext()
         {

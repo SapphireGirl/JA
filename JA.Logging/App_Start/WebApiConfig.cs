@@ -16,7 +16,7 @@ namespace JA.Logging
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "log/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

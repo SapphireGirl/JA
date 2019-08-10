@@ -5,7 +5,7 @@ public class JAFilestream
 
 	public async void CreateCopyOfFile()  
 	{  
-		string dir = @"c:\Mukesh\files\";  
+		string dir = @"c:\JA\files\";  
   
 		using (StreamReader objStreamReader= File.OpenText(dir + "test.txt"))  
 		{  

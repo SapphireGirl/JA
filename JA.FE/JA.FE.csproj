@@ -288,6 +288,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\Tasks\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -330,10 +331,6 @@
     <ProjectReference Include="..\JA.Models\JA.Models.csproj">
       <Project>{9a7eaf9d-be8f-4440-b6d7-30ea28926426}</Project>
       <Name>JA.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\JA.Util\JA.Util.csproj">
-      <Project>{4d2eb5c8-6cff-43e4-8b9f-c4b9bce5691a}</Project>
-      <Name>JA.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -5,7 +5,7 @@ using JA.Models.SharedModels;
 
 namespace JA.Models.BlogModels.Food
 {
-    public class Foodlog : BlogTime, IModificationHistory
+    public class Foodlog : BlogBase, IModificationHistory
     {
         public int Id { get; set; }
         public ICollection<Food> Food { get; set; }

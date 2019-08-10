@@ -3,7 +3,7 @@ using JA.Models.SharedModels;
 
 namespace JA.Models.BlogModels.Food
 {
-    public abstract class Produce : BlogTime, IObjectWithState, IModificationHistory
+    public abstract class Produce : BlogBase, IObjectWithState, IModificationHistory
     {
 
         public virtual int Id { get; set; }

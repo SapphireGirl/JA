@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using JA.Data.Context;
-using JA.Models.BlogModels.BI;
 using JA.Models.BlogModels.Food;
 using JA.Models.BlogModels.WO;
+using JA.Models.CustomerModels;
 using JA.Models.SharedModels;
 
 namespace JA.Data.Seeds
@@ -22,7 +22,7 @@ namespace JA.Data.Seeds
             base.Seed(context);
 
             // Coops
-            context.GoGirls.Add(new GoGirlCustomer
+            context.Customers.Add(new GoGirlCustomer
             {
                 Id = 1,
                 FirstName = "Justine",

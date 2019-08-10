@@ -2,19 +2,17 @@
 using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
-using JA.Models.BlogModels.BI;
 using JA.Models.BlogModels.Food;
 using JA.Models.BlogModels.WO;
+using JA.Models.CustomerModels;
 using JA.Models.SharedModels;
 
 namespace JA.Data.Context
 {
-    public class BlogContext : DbContext
+    public class BlogContext : BaseContext<BlogContext>
     {
-
-        public DbSet<GoGirlCustomer> GoGirls { get; set; }
+        public DbSet<GoGirlCustomer> Customers { get; set; }
         public DbSet<Food> Food { get; set; }
-        public DbSet<IWorkout> Workouts { get; set; }
         public DbSet<WorkoutLog> WorkoutLogs { get; set; }
         public DbSet<Foodlog> Foodlogs { get; set; }
         // public DbSet<BlogUser> Users { get; set; }

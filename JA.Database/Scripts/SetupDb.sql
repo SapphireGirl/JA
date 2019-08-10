@@ -3,18 +3,18 @@ CREATE DATABASE [JADB]
 GO
 /****** Object:  Table [dbo].[GoGirlCustomer]    Script Date: 5/17/2019 9:40:04 PM ******/
 
-CREATE TABLE [dbo].[GoGirlCustomer](
-    [Id] INT NOT NULL PRIMARY KEY, 
-	[FirstName] NVARCHAR(50) NULL, 
-    [LastName] NVARCHAR(50) NULL, 
-	[Email] [nvarchar](50) NOT NULL,
-    [City] NVARCHAR(50) NULL, 
-    [State] NVARCHAR(25) NULL, 
-    [PoliticalAffilliation] NCHAR(10) NULL, 
-    [Admin] bit default 'False',
-	[FoodlogId] INT NULL
-	) 
-Go
+--CREATE TABLE [dbo].[GoGirlCustomer](
+--    [Id] INT NOT NULL PRIMARY KEY, 
+--	[FirstName] NVARCHAR(50) NULL, 
+--    [LastName] NVARCHAR(50) NULL, 
+--	[Email] [nvarchar](50) NOT NULL,
+--    [City] NVARCHAR(50) NULL, 
+--    [State] NVARCHAR(25) NULL, 
+--    [PoliticalAffilliation] NCHAR(10) NULL, 
+--    [Admin] bit default 'False',
+--	[FoodlogId] INT NULL
+--	) 
+--Go
 
 CREATE TABLE [dbo].[Foodlog]
 (
@@ -28,25 +28,25 @@ CREATE TABLE [dbo].[Foodlog]
     [Email] NVARCHAR(50) NULL, 
     [politicalAffilliation] NCHAR(10) NULL, 
     [Admin] CHAR(10) NULL
+)
 
 
-
-ALTER TABLE [dbo].[GoGirlCustomer]
- ADD CONSTRAINT pk_gogirlcustomer  PRIMARY KEY (Id, FoodlogId)
+--ALTER TABLE [dbo].[GoGirlCustomer]
+-- ADD CONSTRAINT pk_gogirlcustomer  PRIMARY KEY (Id, FoodlogId)
 
 GO
 /****** Object:  Table [dbo].[Disenrollment]    Script Date: 6/27/2018 9:40:04 PM ******/
-CREATE TABLE [dbo].[Admin]
-(
-	[Id] INT NOT NULL PRIMARY KEY, 
-	[GoGirlId] INT NOT NULL,
-    [FirstName] NVARCHAR(50) NULL, 
-    [LastName] NVARCHAR(50) NULL, 
-    [City] NVARCHAR(50) NULL, 
-    [Email] NVARCHAR(50) NULL, 
-    [AdminType] CHAR(10) NULL
+--CREATE TABLE [dbo].[Admin]
+--(
+--	[Id] INT NOT NULL PRIMARY KEY, 
+--	[GoGirlId] INT NOT NULL,
+--    [FirstName] NVARCHAR(50) NULL, 
+--    [LastName] NVARCHAR(50) NULL, 
+--    [City] NVARCHAR(50) NULL, 
+--    [Email] NVARCHAR(50) NULL, 
+--    [AdminType] CHAR(10) NULL
 
- )
+-- )
 GO
 /****** Object:  Table [dbo].[Enrollment]    Script Date: 6/27/2018 9:40:04 PM ******/
 SET ANSI_NULLS ON

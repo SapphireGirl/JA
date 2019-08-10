@@ -3,7 +3,7 @@ using JA.Models.SharedModels;
 
 namespace JA.Models.BlogModels.Food
 {
-    public class Food : BlogTime, IModificationHistory
+    public class Food : BlogBase, IModificationHistory
     {
         public int Id { get; set; }
 

@@ -4,7 +4,7 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using JA.Models.SharedModels;
 
-namespace SG.StateManagement
+namespace JA.Data.Context
 {
     public class BaseContext<TContext> : DbContext where TContext : DbContext
     {
@@ -23,7 +23,7 @@ namespace SG.StateManagement
         }
 
         protected BaseContext()
-            : base("name = SGBoundedDatabase")
+            : base("name = GoGirlSqlDatabase")
         {
             ((IObjectContextAdapter)this).ObjectContext
                 .ObjectMaterialized += (sender, args) =>

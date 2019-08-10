@@ -68,11 +68,6 @@
   <ItemGroup>
     <None Include="SQLDBS\GoGirlDb.ldf" />
     <None Include="SQLDBS\GoGirlDb.mdf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="Scripts\dbo.Admin.sql" />
-    <Build Include="Scripts\dbo.Foodlog.sql" />
-    <Build Include="Scripts\dbo.GoGirlCustomer.sql" />
-    <Build Include="Scripts\dbo.Workoutlog.sql" />
+    <None Include="Readme.txt" />
   </ItemGroup>
 </Project>
