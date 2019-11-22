@@ -6,6 +6,7 @@ using JA.Models.BlogModels.Food;
 using JA.Models.BlogModels.WO;
 using JA.Models.CustomerModels;
 using JA.Models.SharedModels;
+//using Microsoft.EntityFrameworkCore;
 
 namespace JA.Data.Context
 {
@@ -20,10 +21,10 @@ namespace JA.Data.Context
         //protected SqlConnectionStringBuilder builder { get; set; }
         //
 
-        public BlogContext()
-        {
-            // BlogConnection
-        }
+        //public BlogContext(DbContextOptionsBuilder OptionsBuilder)
+        //{
+        //    // BlogConnection
+        //}
 
         // ToDo: Complete Mappings
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

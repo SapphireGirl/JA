@@ -3,21 +3,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace JA.DataCore
 {
-    public class ContextBase<Entity> : DbContext
+    public class ContextBase<Entity> : DbContext where Entity : class
     {
         private DbContextOptions<BlogContext> _options;
+
+        protected DbContextOptionsBuilder _OptionsBuilder;
         public ContextBase(DbContextOptions<BlogContext> options)
         {
             _options = options;
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GoGirlCustomer>()
-                // .HasAlternateKey(x => x.Identity);
-                .HasKey(x => x.Id);
-
-            //modelBuilder.Entity<BreakoutSessionTag>()
-            //    .HasKey(x => new { x.BreakoutSessionId, x.TagId });
+           // modelBuilder.Entity<Entity>().HasKey(x => x.Id);
+            
         }
     }
 }
